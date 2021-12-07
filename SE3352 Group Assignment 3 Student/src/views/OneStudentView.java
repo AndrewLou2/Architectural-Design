@@ -5,6 +5,7 @@ public class OneStudentView extends models.Observer{
 	private models.Student model;
 	private controllers.StudentController controller;	
 	
+	// set the model and controller
 	public OneStudentView(models.Student model, controllers.StudentController controller)
 	{
 		this.setModel(model);		
@@ -16,10 +17,11 @@ public class OneStudentView extends models.Observer{
 		this.show();
 	}
 	
+	// when student information is updated
 	public void onStudentUpdate()
 	{
 		//collect the data from user
-		String newStudentInfo = "Jiyong Song";
+		String newStudentInfo = "ID: user, password: 1234";
 		this.controller.updateModel(newStudentInfo);
 	}
 	
@@ -31,6 +33,7 @@ public class OneStudentView extends models.Observer{
 		// display or refresh
 	}
 
+	// getter and setter for model
 	public models.Student getModel() {
 		return model;
 	}
@@ -43,10 +46,12 @@ public class OneStudentView extends models.Observer{
 		this.model.attach(this);
 	}
 
+	// detach from subject
 	private void detach(OneStudentView oneStudentView) {
 		
 	}
 
+	// getter and setter for controller
 	public controllers.StudentController getController() {
 		return controller;
 	}

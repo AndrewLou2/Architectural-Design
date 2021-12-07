@@ -1,5 +1,6 @@
 import views.OneStudentView;
 
+// entry point for Model-View-Controller pattern for Student class
 public class LessonStudentEntryPoint {
 
 	public static void main(String[] args) {

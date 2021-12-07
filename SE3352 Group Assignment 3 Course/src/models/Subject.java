@@ -2,7 +2,7 @@ package models;
 
 import java.util.ArrayList;
 
-// subject for observer pattern
+// subject for observer pattern to observe changes
 public abstract class Subject {
 	ArrayList <Observer> observers = new ArrayList();
 	
