@@ -21,5 +21,7 @@ public class Page {
     public void attach(OnePageView onePageView) {
 
     }
+    public void detach(OnePageView onePageView) {
+    }
 
 }
