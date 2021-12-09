@@ -10,7 +10,7 @@ public class PageController {
         this.model = model;
         this.view = view;
         this.view.setController(this);
-
+        
         // show or refresh since an update occurred
         view.show();
     }
